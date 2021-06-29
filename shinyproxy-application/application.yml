@@ -1,5 +1,10 @@
 proxy:
-  port: 8080
+  title: Aimmobius.com
+  hide-navbar: true
+  landing-page: /app/aimmo
+  heartbeat-rate: 10000
+  heartbeat-timeout: 600000
+  container-wait-time: 100000
   container-backend: kubernetes
   kubernetes:
     internal-networking: true
@@ -8,8 +13,6 @@ proxy:
     image-pull-policy: IfNotPresent
   specs:
   - id: Aimmobius
-    display-name: Aimmobius
-    description: Aimmobius
     container-cmd: ["R", "-e", "shiny::runApp('/app/shiny')"]
     container-image: gcr.io/apt-subset-313012/aimmo
 
