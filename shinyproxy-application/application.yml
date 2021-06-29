@@ -6,7 +6,7 @@ proxy:
     url: http://localhost:8001
     namespace: shiny
     image-pull-policy: IfNotPresent
-    image-pull-secret: ${SecretForDockerRegistry} 
+    image-pull-secret: gcr.io/apt-subset-313012
   specs:
   - id: Aimmobius
     display-name: Aimmobius
