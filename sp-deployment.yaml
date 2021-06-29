@@ -25,4 +25,4 @@ spec:
         ports:
         - containerPort: 8001
       imagePullSecrets:
-      - name: ${SecretForDockerRegistry}
+      - name: gcr.io/apt-subset-313012
